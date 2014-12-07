@@ -309,10 +309,11 @@ body {
 }
 .grid
 {
-	width: 28%;
+	width: 100%;
 	float: left;
 	background: #FFF;
 	margin-right: 8%;
+	text-align:left;
 }
 .dc_zoom_css span.roll_css6:hover {
 	opacity: 0.9;
