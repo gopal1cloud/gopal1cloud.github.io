@@ -135,8 +135,10 @@ $(function(){
           else {			 
             outhtml = outhtml + '<p style="white-space:pre-line;">'+atob(repositories.content)+'</p></div>';
           }
-          outhtml = outhtml + '<h5 id="download" style="width:180px;"><a href="'+downloaduri+'"><button>Download ZIP</button></a></h5>';
+          download_content = '<center><h5 id="download" style="width:180px;"><a href="'+downloaduri+'"><button>Download ZIP</button></a></h5></center>';
           $('#ghapirepodata').html(outhtml);
+          $('#download_container').html(download_content);
+          
           showRepoCatalog('master');
         } // end outputPageContent()
       } // end else statement
@@ -269,9 +271,9 @@ function showRepoCatalog(pathname) {
 					<!--start-mfp -->	
 						<div id="small-dialog1" class="mfp-hide">
 							<div class="pop_up">
-								<h2>Lorem ipsum sit amet</h2>
-								<img src="web/images/icon1.png" alt=""/>
-								<p class="para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+								<h2>Download Now</h2>
+								<div id="download_container"></div>	<br>															
+								<p class="para">Its free to download this archived solutions for Cisco Nexus 9000. Please ping us for any support. Enjoy!</p>
 							</div>
 						</div>
 					<!--end-mfp -->	
@@ -282,7 +284,24 @@ function showRepoCatalog(pathname) {
 						<h2>About Nexus 9000</h2>
 						<p>Cisco Nexus 9000 Series Switches bring new, industry-leading performance, power, port density, and open programmability innovations. <br><br>Cisco Nexus 9000 GitHub Repo (<a href="https://github.com/datacenter/nexus9000" target="_blank">@datacenter/nexus9000</a>)</p>
 						<div id="ghapirepodata" class="clearfix"></div>
-
+			<center>
+            <div class="portfolio logo" data-cat="logo" style="width:200px;float:none;!important">
+				<div class="portfolio-wrapper">				
+					<a class="popup-with-zoom-anim" href="#small-dialog1">
+						<ul class="ch-grid">
+							<li>
+								<div class="ch-item ch-img-1">
+									<div class="ch-info"><br><br>
+										<h3>Download Now</h3>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</a>
+				</div>
+			</div>	
+           </center>			
+ 
 		</div>
 	</div><!-- container -->
 	<script type="text/javascript" src="web/js/fliplightbox.min.js"></script>
